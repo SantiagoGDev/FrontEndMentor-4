@@ -1,8 +1,55 @@
+:root{
+    --Dark_Blue: hsl(217, 28%, 15%);
+    --Dark_BlueM: hsl(218, 28%, 13%);
+    --Dark_BlueF: hsl(216, 53%, 9%);
+    --Dark_BlueT: hsl(219, 30%, 18%);
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+}
 
+body{
+    background: var(--Dark_Blue);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+/*               Header          */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    width: 100%;
+    height: 80px;
+    padding:  0 2rem;
+}
+.hero__img{
+    width: 80px;
+}
+.main-menu__link{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all ease .8s;
+}
+.main-menu__link:hover{
+    color: var(--Cyan);
+}
+/*               Header          */
 
+/*               Media Queris          */
+@media screen and (max-width:650px){
+    .hero{
+        padding: 0 1rem;
+    }
+    .main-menu__link{
+        font-size: 16px;
+        padding: 10px;
+    }
+}
 
-
+/*               Media Queris          */
 
 
 
