@@ -227,6 +227,62 @@ body{
 }
 /*               Experiences       */
 
+/*               Get       */
+.get{
+    background: linear-gradient(180deg,var(--Dark_BlueM) 50%, var(--Dark_BlueF) 50%) ;
+    padding: 10% 0 ;
+}
+.get__box{
+    width: 80%;
+    padding: 4.5rem;
+    margin: auto;
+    background: var(--Dark_Blue);
+    color:#fff;
+    text-align: center;
+}
+
+.get__title{
+    font-family: var(--ff);
+    font-weight: 700;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.get__text{
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.get__input{
+    outline: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    width: 60%;
+    margin-right: 20px;
+}
+.get__input:focus{
+    border: 3px solid var(--Cyan);
+}
+.get__btn{
+    outline: none;
+    border: none;
+    padding: 20px 5px;
+    border-radius: 30px;
+    width: 30%;
+    margin-right: 20px;
+    color:#fff;
+    font-weight: 700;
+    background: linear-gradient(to left,var(--Cyan),var(--Blue));
+    transition: all ease .5s;
+    cursor: pointer;
+}
+.get__btn:hover{
+    border: 2px solid var(--Cyan);
+    background: none;
+    color: var(--Cyan);
+}
+
+/*               Get       */
+
 
 /*               Media Queris          */
 @media screen and (max-width:1050px){
@@ -263,7 +319,20 @@ body{
         grid-template-columns: 1fr;
         padding: 10% 5%;
     }
-
+    .get__box{
+        width: 90%;
+        padding: 2.5rem;
+    }
+    .get__title{
+        font-size: 40px;
+    }
+    .get__input{
+        width: 50%;
+        margin-left: 5px;
+    }
+    .get__btn{
+        width: 40%;
+    }
 }
 @media screen and (max-width:650px){
     .hero{
@@ -306,7 +375,25 @@ body{
         line-height: 25px;
     }
     .experiences{
-        padding: 20% 3%;
+        padding: 20% 5%;
+    }
+    .get__box{
+        width: 90%;
+        padding: 1rem;
+    }
+    .get__title{
+        font-size: 30px;
+    }
+    .get__text{
+        font-size: 16px;
+    }
+    .get__input{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .get__btn{
+        width: 100%;
     }
 }
 @media screen and (max-width:340px){
@@ -329,6 +416,7 @@ body{
     .services__card-text{
         font-size: 14px;
     }
+
 }
 /*               Media Queris          */
 
