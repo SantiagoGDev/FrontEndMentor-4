@@ -230,7 +230,6 @@ body{
 /*               Get       */
 .get{
     background: linear-gradient(180deg,var(--Dark_BlueM) 50%, var(--Dark_BlueF) 50%) ;
-    padding: 10% 0 ;
 }
 .get__box{
     width: 80%;
@@ -282,6 +281,56 @@ body{
 }
 
 /*               Get       */
+
+/*               FOOTER       */
+footer{
+    background: var(--Dark_BlueF);
+    color: #fff;
+    font-weight: bold;
+    padding: 5%;
+}
+.ft__box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:30px;
+    justify-items: flex-start;
+}
+.ft__link{
+    display: block;
+    width: fit-content;
+    padding: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+}
+.ft__description {
+    display: flex;
+    align-items: flex-start;
+
+    line-height: 30px;
+    margin: 0;
+    padding: 1rem 0;
+}
+.ft__description .ft__icon{
+    margin-top: 5px;
+}
+.ft__icon{
+    margin-right: 10px;
+}
+.ft__social{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.ft__icon-social{
+
+    font-size: 25px;
+    color:#fff;
+    border: 2px solid #fff;
+
+    padding: 10px;
+    border-radius: 50%;
+}
+/*               FOOTER       */
 
 
 /*               Media Queris          */
@@ -335,6 +384,7 @@ body{
     }
 }
 @media screen and (max-width:650px){
+
     .hero{
         padding: 0 1rem;
     }
@@ -394,6 +444,9 @@ body{
     }
     .get__btn{
         width: 100%;
+    }
+    footer{
+        padding: 10% 5%;
     }
 }
 @media screen and (max-width:340px){
